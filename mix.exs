@@ -22,7 +22,9 @@ defmodule Wanikani.Mixfile do
   defp deps do
     [
       { :poison, "~> 3.1" },
-      { :httpoison, "~> 0.13.0"}
+      { :httpoison, "~> 0.13.0"},
+      { :ex_doc, "~> 0.11", only: :dev},
+      { :earmark, "~> 0.1", only: :dev}
     ]
   end
 
