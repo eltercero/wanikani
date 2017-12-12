@@ -17,7 +17,7 @@ defmodule Wanikani.Api do
   end
 
   defp api_token do
-    Application.get_env(:wanikani, :api_token, System.get_env("WANIKANI_API_TOKEN"))
+    System.get_env("WANIKANI_API_TOKEN")
   end
 
 end
