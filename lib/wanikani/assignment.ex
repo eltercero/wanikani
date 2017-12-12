@@ -27,7 +27,7 @@ defmodule Wanikani.Assignment do
   end
 
   @doc """
-  Get a single subject.
+  Get a single assignment.
 
   ```
     Wanikani.Assignment.get(64591295)
