@@ -42,14 +42,14 @@ defmodule Wanikani.ReviewStatisticTest do
   end
 
   test ".list" do
-    params = %{type: "radical", levels: "1,2"}
+    params = %{subject_type: "kanji"}
     {status, body} = Wanikani.ReviewStatistic.list(params, MockApi)
     assert :ok == status
     assert 2 == Enum.count(body["data"])
   end
 
   test ".get" do
-    {status, body} = Wanikani.ReviewStatistic.get(493, MockApi)
+    {status, body} = Wanikani.ReviewStatistic.get(412199, MockApi)
     assert :ok == status
     assert "https://www.wanikani.com/api/v2/review_statistics/412199" == body["url"]
   end

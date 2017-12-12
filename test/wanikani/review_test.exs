@@ -43,14 +43,14 @@ defmodule Wanikani.ReviewTest do
   end
 
   test ".list" do
-    params = %{type: "radical", levels: "1,2"}
+    params = %{}
     {status, body} = Wanikani.Review.list(params, MockApi)
     assert :ok == status
     assert 3 == Enum.count(body["data"])
   end
 
   test ".get" do
-    {status, body} = Wanikani.Review.get(493, MockApi)
+    {status, body} = Wanikani.Review.get(5297, MockApi)
     assert :ok == status
     assert "https://www.wanikani.com/api/v2/reviews/5297" == body["url"]
   end

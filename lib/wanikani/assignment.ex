@@ -22,7 +22,7 @@ defmodule Wanikani.Assignment do
     Wanikani.Assignment.list(%{burned: true, levels: "1,2"})
   ```
   """
-  def list(params, client \\ Wanikani.Api) do
+  def list(params \\ [], client \\ Wanikani.Api) do
     client.request("assignments", params)
   end
 

@@ -49,14 +49,14 @@ defmodule Wanikani.StudyMaterialTest do
   end
 
   test ".list" do
-    params = %{type: "radical", levels: "1,2"}
+    params = %{subject_type: "radical"}
     {status, body} = Wanikani.StudyMaterial.list(params, MockApi)
     assert :ok == status
     assert 4 == Enum.count(body["data"])
   end
 
   test ".get" do
-    {status, body} = Wanikani.StudyMaterial.get(493, MockApi)
+    {status, body} = Wanikani.StudyMaterial.get(592160, MockApi)
     assert :ok == status
     assert "https://www.wanikani.com/api/v2/study_materials/592160" == body["url"]
   end

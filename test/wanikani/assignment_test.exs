@@ -41,14 +41,14 @@ defmodule Wanikani.AssignmentTest do
   end
 
   test ".list" do
-    params = %{type: "radical", levels: "1,2"}
+    params = %{burned: true, levels: "1,2"}
     {status, body} = Wanikani.Assignment.list(params, MockApi)
     assert :ok == status
     assert 2 == Enum.count(body["data"])
   end
 
   test ".get" do
-    {status, body} = Wanikani.Assignment.get(493, MockApi)
+    {status, body} = Wanikani.Assignment.get(64591295, MockApi)
     assert :ok == status
     assert "https://www.wanikani.com/api/v2/assignments/64591295" == body["url"]
   end

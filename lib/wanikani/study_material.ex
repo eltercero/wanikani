@@ -4,7 +4,7 @@ defmodule Wanikani.StudyMaterial do
   """
 
   @doc """
-  Get a list of review study materials.
+  Get a list of study materials.
 
   Accepted params:
   * ids Integers  Return results tied to ids
@@ -16,12 +16,12 @@ defmodule Wanikani.StudyMaterial do
     Wanikani.StudyMaterial.list(%{subject_type: "radical"})
   ```
   """
-  def list(params, client \\ Wanikani.Api) do
+  def list(params \\ [], client \\ Wanikani.Api) do
     client.request("study_materials", params)
   end
 
   @doc """
-  Get a single review study material.
+  Get a single review.
 
   ```
     Wanikani.StudyMaterial.get(592160)

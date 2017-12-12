@@ -18,7 +18,7 @@ defmodule Wanikani.Subject do
     Wanikani.Subject.list(%{type: "kanji", slug: "月"})
   ```
   """
-  def list(params, client \\ Wanikani.Api) do
+  def list(params \\ [], client \\ Wanikani.Api) do
     client.request("subjects", params)
   end
 

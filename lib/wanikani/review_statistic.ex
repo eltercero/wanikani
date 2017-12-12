@@ -16,7 +16,7 @@ defmodule Wanikani.ReviewStatistic do
     Wanikani.ReviewStatistic.list(%{subject_type: "kanji"})
   ```
   """
-  def list(params, client \\ Wanikani.Api) do
+  def list(params\\[], client \\ Wanikani.Api) do
     client.request("review_statistics", params)
   end
 
