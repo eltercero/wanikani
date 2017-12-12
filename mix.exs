@@ -39,7 +39,8 @@ defmodule Wanikani.Mixfile do
      files: ["lib", "config", "mix.exs", "README*"],
      maintainers: ["Víctor Martín"],
      licenses: ["MIT"],
-     links: %{"GitHub" => "https://github.com/eltercero/wanikani"}
+     links: %{"GitHub" => "https://github.com/eltercero/wanikani",
+              "Docs" => "https://hexdocs.pm/wanikani"}
     ]
   end
 end
