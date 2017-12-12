@@ -17,7 +17,7 @@ defmodule Wanikani.Vocabulary do
     Wanikani.Vocabulary.list(%{slug: "月"})
   ```
   """
-  def list(params, client \\ Wanikani.Api) do
+  def list(params \\ %{}, client \\ Wanikani.Api) do
     new_params = Map.merge(params, %{type: "vocabulary"})
     Wanikani.Subject.list(new_params, client)
   end

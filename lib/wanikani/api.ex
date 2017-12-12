@@ -1,7 +1,7 @@
 defmodule Wanikani.Api do
   @url "https://www.wanikani.com/api/v2"
 
-  def request(path, params \\ []) do
+  def request(path, params \\ %{}) do
     encoded_params = URI.encode_query(params)
 
     case HTTPoison.get("#{@url}/#{path}?#{encoded_params}", request_headers()) do

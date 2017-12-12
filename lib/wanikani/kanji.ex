@@ -17,7 +17,7 @@ defmodule Wanikani.Kanji do
     Wanikani.Kanji.list(%{slug: "月"})
   ```
   """
-  def list(params, client \\ Wanikani.Api) do
+  def list(params \\ %{}, client \\ Wanikani.Api) do
     new_params = Map.merge(params, %{type: "kanji"})
     Wanikani.Subject.list(new_params, client)
   end

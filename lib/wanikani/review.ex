@@ -15,7 +15,7 @@ defmodule Wanikani.Review do
     Wanikani.Review.list()
   ```
   """
-  def list(params\\[], client \\ Wanikani.Api) do
+  def list(params \\ %{}, client \\ Wanikani.Api) do
     client.request("reviews", params)
   end
 

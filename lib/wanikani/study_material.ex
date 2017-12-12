@@ -16,7 +16,7 @@ defmodule Wanikani.StudyMaterial do
     Wanikani.StudyMaterial.list(%{subject_type: "radical"})
   ```
   """
-  def list(params \\ [], client \\ Wanikani.Api) do
+  def list(params \\ %{}, client \\ Wanikani.Api) do
     client.request("study_materials", params)
   end
 
