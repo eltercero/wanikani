@@ -1,6 +1,6 @@
 defmodule Wanikani.Summary do
   @moduledoc """
-  Module for the requests about Summary endpoint
+  Module for the requests to the Summary endpoint
   """
 
   @doc """

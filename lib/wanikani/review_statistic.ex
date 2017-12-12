@@ -1,6 +1,6 @@
 defmodule Wanikani.ReviewStatistic do
   @moduledoc """
-  Module for the requests about ReviewStatistics endpoint
+  Module for the requests to the ReviewStatistics endpoint
   """
 
   @doc """

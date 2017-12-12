@@ -1,6 +1,6 @@
 defmodule Wanikani.Vocabulary do
   @moduledoc """
-  Module for the requests about Vocabularies endpoint with Vocabulary type added.
+  Module for the requests to the Vocabularies endpoint with Vocabulary type added.
   """
 
   @doc """

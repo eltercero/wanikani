@@ -1,6 +1,6 @@
 defmodule Wanikani.Kanji do
   @moduledoc """
-  Module for the requests about Kanjis endpoint with Kanji type added.
+  Module for the requests to the Kanjis endpoint with Kanji type added.
   """
 
   @doc """

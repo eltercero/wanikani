@@ -1,6 +1,6 @@
 defmodule Wanikani.StudyMaterial do
   @moduledoc """
-  Module for the requests about StudyMaterials endpoint
+  Module for the requests to the StudyMaterials endpoint
   """
 
   @doc """

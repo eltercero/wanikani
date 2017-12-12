@@ -1,6 +1,6 @@
 defmodule Wanikani.Radical do
   @moduledoc """
-  Module for the requests about Radicals endpoint with Radical type added.
+  Module for the requests to the Radicals endpoint with Radical type added.
   """
 
   @doc """

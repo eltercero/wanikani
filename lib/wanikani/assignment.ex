@@ -1,6 +1,6 @@
 defmodule Wanikani.Assignment do
   @moduledoc """
-  Module for the requests about Assignments endpoint
+  Module for the requests to the Assignments endpoint
   """
 
   @doc """

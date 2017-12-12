@@ -1,6 +1,6 @@
 defmodule Wanikani.User do
   @moduledoc """
-  Module for the requests about User endpoint
+  Module for the requests to the User endpoint
   """
 
   @doc """

@@ -1,6 +1,6 @@
 defmodule Wanikani.Subject do
   @moduledoc """
-  Module for the requests about Subjects endpoint
+  Module for the requests to the Subjects endpoint
   """
 
   @doc """
